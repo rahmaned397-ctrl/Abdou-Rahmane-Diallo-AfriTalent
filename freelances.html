@@ -9,6 +9,7 @@
     <link 
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
 rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
@@ -16,12 +17,217 @@ rel="stylesheet">
 <body> 
 
     <!-- Le contenu de la page sera ajoute ici --> 
+    <!-- Navigation Bootstrap commune a toutes les pages --> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+            <div class="container"> 
+                <img src="images/logo2.png" alt="Logo AfriTalent" width="25">
+                <a class="navbar-brand" href="index.html">AfriTalent</a> 
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navMenu" 
+                    aria-controls="navMenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu"> 
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link" 
+                href="index.html">Accueil</a></li> 
+                        <li class="nav-item"><a class="nav-link active" 
+                href="freelances.html">Freelances</a></li> 
+                        <li class="nav-item"><a class="nav-link" 
+                href="tarifs.html">Tarifs</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="about.html">A 
+                propos</a></li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" 
+                href="contact.html">Contact</a></li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </nav>
+    </header> 
+    <!-- Contenu principal --> 
+    <main> 
+        <!-- SECTION FILTRES -->
+         <section>
+            <div class="conatainer py-5 text-center">
+                <h2>Nos Freelances</h2>
+                <select>
+                    <option disabled selected>Tous</option>
+                    <option value="developpeur-web">Développeur web</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </div>
+         </section>
+         <!-- SECTION GRILLE DE PROFIL -->
+          <section>
+            <div class="contairer py-5">
+                <div class="row">
+                           <!-- --1-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Ali Ndiaye</h5>
+                            <p>Développeur web</p>
+                            <p>Création de sites modernes et performants</p>
+                            <p><strong>100000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_man1.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                            <!-- -- --2-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Fatou Diop</h5>
+                            <p>Designer UI/UX</p>
+                            <p>Interface modernes et intuitives</p>
+                            <p><strong>90000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_woman1.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                           <!-- -- --3-- -->           
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Moussa Traoré</h5>
+                            <p>Marketing Digital</p>
+                            <p>Stratégies de marketing digital efficaces</p>
+                            <p><strong>80000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_man3.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                             <!-- -- --4-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Modou Fall</h5>
+                            <p>Data Analyst</p>
+                            <p>Analyse et visualisation de données</p>
+                            <p><strong>70000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_man4.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                                <!-- -- --5-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Issa Seck</h5>
+                            <p>Rédacteur Tech</p>
+                            <p>Contenus techniques clairs et précis.</p>
+                            <p><strong>60000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_man6.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                                <!-- -- --6-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Fatima Sarr</h5>
+                            <p>DevOps</p>
+                            <p>Gestion et déploiement d'infrastructures cloud</p>
+                            <p><strong>850000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_woman2.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                                <!-- -- --7-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Cheikh Diouf</h5>
+                            <p>Développeur mobile</p>
+                            <p>Application Android et IOS performantes</p>
+                            <p><strong>95000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_man2.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                                <!-- -- --8-- -->
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Ndèye Kane</h5>
+                            <p>Community Manager</p>
+                            <p>Gestion des réseaux sociaux</p>
+                            <p><strong>75000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_woman3.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                                <!-- -- --9-- -->   
+                    <div class="col-lg-4 col-md-6 col-12 mb_4 p-2">
+                        <div class="card text-center">
+                            <h5>Omar Sy</h5>
+                            <p>Ingénieur Cloud</p>
+                            <p>Solutions cloud sécurisées et évolutives</p>
+                            <p><strong>110000FCFA/h</strong></p>
+                            <p>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                                <i class="bi bi-star-fill text-success"></i>
+                            </p>
+                            <a href="images/free_man5.jpg" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+          </section> 
+    </main>
+    <!-- Pied de page --> 
+    <footer> 
+        <div class="container py-4"> 
+            <p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
+        </div> 
+    </footer>
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script> 
     <!-- Votre script JavaScript --> 
     <script src="js/main.js"></script>
 

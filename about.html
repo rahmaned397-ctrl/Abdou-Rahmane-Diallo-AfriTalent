@@ -8,7 +8,8 @@
     <!-- Bootstrap 5 via CDN : feuille de style --> 
     <link 
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
@@ -16,12 +17,192 @@ rel="stylesheet">
 <body> 
 
     <!-- Le contenu de la page sera ajoute ici --> 
+    <!-- Navigation Bootstrap commune a toutes les pages --> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+            <div class="container"> 
+                <img src="images/logo2.png" alt="Logo AfriTalent" width="25">
+                <a class="navbar-brand" href="index.html">AfriTalent</a> 
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navMenu" 
+                    aria-controls="navMenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu"> 
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link" 
+                href="index.html">Accueil</a></li> 
+                        <li class="nav-item"><a class="nav-link" 
+                href="freelances.html">Freelances</a></li> 
+                        <li class="nav-item"><a class="nav-link" 
+                href="tarifs.html">Tarifs</a></li> 
+                        <li class="nav-item"><a class="nav-link active" href="about.html">A 
+                propos</a></li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" 
+                href="contact.html">Contact</a></li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </nav>
+    </header> 
+    <!-- Contenu principal --> 
+    <main> 
+         <!-- Section « Notre Histoire »  -->
+        <section>
+            <h2 class="text-center"> Notre Histoire</h2>
+            <div class="container">
+                    <div>
+                        <p>
+                            AfriTalent est né de la volonté de connecter les talents Africains
+                            aux opportunités internationales. Face aux difficultés d'accès au marché global, 
+                            la plateforme a été crée pour offrir une solution simple, efficace et accessible à tous.
+                        </p>
+                        <p>
+                            Aujourd'hui, AfriTalent accompagne des milliers de freelances et d'entreprises dans leurs projets, 
+                            en facilitant la collaboration et en valorisant les compétences locales.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/histr1.jpg" alt="" width="100%">
+                    </div>
+            </div>
+        </section>
+       <!-- Section « L'équipe »  -->
+        <section>
+            <div class="container py-5">
+                <h2 class="text-center"> L'équipe </h2>
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-md-6 p-2">
+                        <div class="card text-center">
+                            <img src="images/Dev1.jpg" alt="Développeur web qualifié">
+                            <h3>Doudou Fall</h3>
+                            <p>Fondateur</p>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-md-6 p-2">
+                        <div class="card text-center">
+                            <img src="images/hist_woman2.jpg" alt="Elle maîtrise le design">
+                            <h3>Fatou Ndiaye</h3>
+                            <p>Designer</p>
+                            <a href="#">Twitter</a>
+                            <a href="#">Facebook</a>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                     <div class="col-md-6 p-2">
+                        <div class="card text-center">
+                            <img src="images/hist_man1.jpg" alt="Le développeur d'applications et web">
+                            <h3>Moussa Sow</h3>
+                            <p>Développeur</p>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                     </div>
+                     <!-- 4 -->
+                    <div class="col-md-6 p-2">
+                        <div class="card text-center">
+                            <img src="images/hist-woman1.jpg" alt="La marketeuse">
+                            <h3>Awa Ngom</h3>
+                            <p>Marketing</p>
+                            <a href="#">Twitter</a>
+                            <a href="#">Facebook</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+        <!-- Section « Nos valeurs » -->
+        <section>
+            <div class="container py-5">
+                <h2 class="text-center">Nos valeurs</h2>
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-md-6 p-3">
+                        <div class="card text-center">
+                            <i class="bi bi-rocket text-danger"></i>
+                            <h5>Innovation</h5>
+                            <p>Nous encourageons la créativité et les nouvelles idées.</p>
+                        </div>                       
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-md-6 p-3">
+                        <div class="card text-center">
+                            <i class="bi bi-globe text-primary"></i>
+                            <h5>Accessibilité</h5>
+                            <p>Une plateforme ouverte à tous les talents africains.</p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-md-6 p-3">
+                        <div class="card text-center">
+                            <i class="bi bi-people text-primary"></i>
+                            <h5>Communauté</h5>
+                            <p>Nous construisons un réseau solide et solidaire.</p>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-md-6 p-3">
+                        <div class="card text-center">
+                            <i class="bi bi-star text-danger"></i>
+                            <h5>Excellence</h5>
+                            <p>Nous visons la qualité dans chaque projet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Section « Chiffres clés »  -->
+        <section>
+            <h1>Chiffres clés</h1>
+            <div class="container py-5">
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-md-3">
+                        <h4>900+</h4>
+                        <p>Entreprises</p>
+                    </div>
+                    <!-- 2 -->
+                     <div class="col-md-3">
+                        <h4>2000+</h4>
+                        <p>Freelances</p>
+                    </div>
+                    <!-- 3 -->
+                     <div class="col-md-3">
+                        <h4>1200+</h4>
+                        <p>Missions réalisées</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-md-3">
+                        <h4>40+</h4>
+                        <p>Pays</p>
+                    </div>
+
+                </div>
+            <div>
+        </section> 
+    </main>
+    <!-- Pied de page --> 
+    <footer> 
+        <div class="container py-4"> 
+            <p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
+        </div> 
+    </footer>
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script> 
     <!-- Votre script JavaScript --> 
     <script src="js/main.js"></script>
 
