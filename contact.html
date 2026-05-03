@@ -13,16 +13,17 @@ rel="stylesheet">
 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body> 
 
     <!-- Le contenu de la page sera ajoute ici --> 
     <!-- Navigation Bootstrap commune a toutes les pages --> 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
             <div class="container"> 
-                <img src="images/logo2.png" alt="Logo AfriTalent" width="25">
-                <a class="navbar-brand" href="index.html">AfriTalent</a> 
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Logo AfriTalent" width="45">
+                    AfriTalent</a> 
                 <button class="navbar-toggler" type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target="#navMenu" 
@@ -41,14 +42,12 @@ rel="stylesheet">
                 href="tarifs.html">Tarifs</a></li> 
                         <li class="nav-item"><a class="nav-link" href="about.html">A 
                 propos</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blog.html">Blog</a>
-                        </li> 
                         <li class="nav-item"><a class="nav-link active" 
                 href="contact.html">Contact</a></li> 
                     </ul> 
                 </div> 
             </div> 
+            <a href="#" class="btn btn-info p-0">Rejoindre AfriTalent</a> 
         </nav>
     </header> 
     <!-- Contenu principal --> 
@@ -58,8 +57,8 @@ rel="stylesheet">
             <div class="cnt-container">
 
                 <!-- Formulaire de contact  -->
-                <div>
-                    <h2>Contatez-nous</h2>
+                <div class="div-form">
+                    <h2 class="form mt-5">Contatez-nous</h2>
                     <form>
                     <input type="text" placeholder="Votre nom"><br>
                     <small></small><br>
@@ -69,7 +68,7 @@ rel="stylesheet">
                         <small></small><br>
                         <label for="Sujet">Sujet</label><br>
                         <select>
-                            <option disabled selected>choisir</option>
+                            <option class="option-form" disabled selected>choisir</option>
                             <option>Recrutement</option>
                             <option>Support</option>
                             <option>Information</option>
@@ -77,12 +76,12 @@ rel="stylesheet">
                         <small></small><br>
                         <textarea placeholder="Votre message"></textarea><br>
                         <small></small><br>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn-form btn btn-primary">Envoyer</button>
                         <p></p>
                     </form>
                 </div>
                 <!-- Informations de contact -->
-                 <div>
+                 <div class="contact">
                     <h2>Informations de contact</h2>
                     <p>Email: Contact@afritalent.com</p>
                     <p>Téléphone: +221 33 345 88 90</p>
@@ -95,10 +94,12 @@ rel="stylesheet">
         <!-- Carte Google Maps -->
         <section>
 
-            <h2>Trouvez-nous</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61756.16940479362!2d-17.439053849999986!3d14.669523700000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724ebcf41b5d%3A0x2d84ad82d5bef1a6!2sDakar-Plateau%2C%20Dakar!5e0!3m2!1sen!2ssn!4v1777072186933!5m2!1sen!2ssn" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <h2 class="text-center">Trouvez-nous</h2>
+            <div class="carte-iframe">
+                <iframe 
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61756.16940479362!2d-17.439053849999986!3d14.669523700000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724ebcf41b5d%3A0x2d84ad82d5bef1a6!2sDakar-Plateau%2C%20Dakar!5e0!3m2!1sen!2ssn!4v1777072186933!5m2!1sen!2ssn" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
         </section> 
     </main>

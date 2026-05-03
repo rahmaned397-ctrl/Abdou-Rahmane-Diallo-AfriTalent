@@ -13,16 +13,17 @@ rel="stylesheet">
 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body> 
 
     <!-- Le contenu de la page sera ajoute ici --> 
     <!-- Navigation Bootstrap commune a toutes les pages --> 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
             <div class="container"> 
-                <img src="images/logo2.png" alt="Logo AfriTalent" width="25">
-                <a class="navbar-brand" href="index.html">AfriTalent</a> 
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Logo AfriTalent" width="45">
+                    AfriTalent</a> 
                 <button class="navbar-toggler" type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target="#navMenu" 
@@ -41,23 +42,21 @@ rel="stylesheet">
                 href="tarifs.html">Tarifs</a></li> 
                         <li class="nav-item"><a class="nav-link active" href="about.html">A 
                 propos</a></li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blog.html">Blog</a>
-                        </li>
                         <li class="nav-item"><a class="nav-link" 
                 href="contact.html">Contact</a></li> 
                     </ul> 
                 </div> 
             </div> 
+            <a href="#" class="btn btn-info p-0">Rejoindre AfriTalent</a> 
         </nav>
     </header> 
     <!-- Contenu principal --> 
     <main> 
          <!-- Section « Notre Histoire »  -->
         <section>
-            <h2 class="text-center"> Notre Histoire</h2>
-            <div class="container">
-                    <div>
+            <h2 class="h2-hist text-center"> Notre Histoire</h2>
+            <div class="container-hist">
+                    <div class="text-hist">
                         <p>
                             AfriTalent est né de la volonté de connecter les talents Africains
                             aux opportunités internationales. Face aux difficultés d'accès au marché global, 
@@ -68,9 +67,7 @@ rel="stylesheet">
                             en facilitant la collaboration et en valorisant les compétences locales.
                         </p>
                     </div>
-                    <div>
-                        <img src="images/histr1.jpg" alt="" width="100%">
-                    </div>
+                    <img src="images/histr1.jpg" alt="Image de notre histoire">
             </div>
         </section>
        <!-- Section « L'équipe »  -->
@@ -80,42 +77,42 @@ rel="stylesheet">
                 <div class="row">
                     <!-- 1 -->
                     <div class="col-md-6 p-2">
-                        <div class="card text-center">
+                        <div class="card carte-Equipe text-center">
                             <img src="images/Dev1.jpg" alt="Développeur web qualifié">
                             <h3>Doudou Fall</h3>
                             <p>Fondateur</p>
-                            <a href="#">Facebook</a>
-                            <a href="#">Twitter</a>
+                            <a class="a-carte" href="#">Facebook</a>
+                            <a class="a-carte" href="#">Twitter</a>
                         </div>
                     </div>
                     <!-- 2 -->
                     <div class="col-md-6 p-2">
-                        <div class="card text-center">
+                        <div class="card carte-Equipe text-center">
                             <img src="images/hist_woman2.jpg" alt="Elle maîtrise le design">
                             <h3>Fatou Ndiaye</h3>
                             <p>Designer</p>
-                            <a href="#">Twitter</a>
-                            <a href="#">Facebook</a>
+                            <a class="a-carte" href="#">Twitter</a>
+                            <a class="a-carte" href="#">Facebook</a>
                         </div>
                     </div>
                     <!-- 3 -->
                      <div class="col-md-6 p-2">
-                        <div class="card text-center">
+                        <div class="card carte-Equipe text-center">
                             <img src="images/hist_man1.jpg" alt="Le développeur d'applications et web">
                             <h3>Moussa Sow</h3>
                             <p>Développeur</p>
-                            <a href="#">Facebook</a>
-                            <a href="#">Twitter</a>
+                            <a class="a-carte" href="#">Facebook</a>
+                            <a class="a-carte" href="#">Twitter</a>
                         </div>
                      </div>
                      <!-- 4 -->
                     <div class="col-md-6 p-2">
-                        <div class="card text-center">
+                        <div class="card carte-Equipe text-center">
                             <img src="images/hist-woman1.jpg" alt="La marketeuse">
                             <h3>Awa Ngom</h3>
                             <p>Marketing</p>
-                            <a href="#">Twitter</a>
-                            <a href="#">Facebook</a>
+                            <a class="a-carte" href="#">Twitter</a>
+                            <a class="a-carte" href="#">Facebook</a>
                         </div>
                     </div>
 
@@ -129,7 +126,7 @@ rel="stylesheet">
                 <div class="row">
                     <!-- 1 -->
                     <div class="col-md-6 p-3">
-                        <div class="card text-center">
+                        <div class="carte-valeur card text-center">
                             <i class="bi bi-rocket text-danger"></i>
                             <h5>Innovation</h5>
                             <p>Nous encourageons la créativité et les nouvelles idées.</p>
@@ -137,7 +134,7 @@ rel="stylesheet">
                     </div>
                     <!-- 2 -->
                     <div class="col-md-6 p-3">
-                        <div class="card text-center">
+                        <div class="carte-valeur card text-center">
                             <i class="bi bi-globe text-primary"></i>
                             <h5>Accessibilité</h5>
                             <p>Une plateforme ouverte à tous les talents africains.</p>
@@ -145,7 +142,7 @@ rel="stylesheet">
                     </div>
                     <!-- 3 -->
                     <div class="col-md-6 p-3">
-                        <div class="card text-center">
+                        <div class="carte-valeur card text-center">
                             <i class="bi bi-people text-primary"></i>
                             <h5>Communauté</h5>
                             <p>Nous construisons un réseau solide et solidaire.</p>
@@ -153,7 +150,7 @@ rel="stylesheet">
                     </div>
                     <!-- 4 -->
                     <div class="col-md-6 p-3">
-                        <div class="card text-center">
+                        <div class="carte-valeur card text-center">
                             <i class="bi bi-star text-danger"></i>
                             <h5>Excellence</h5>
                             <p>Nous visons la qualité dans chaque projet.</p>
@@ -166,25 +163,24 @@ rel="stylesheet">
         <!-- Section « Chiffres clés »  -->
         <section>
             <h1>Chiffres clés</h1>
-            <div class="container py-5">
-                <div class="row">
+            <div class="chiffres-grid">
                     <!-- 1 -->
-                    <div class="col-md-3">
+                    <div class="chifres-carte">
                         <h4>900+</h4>
                         <p>Entreprises</p>
                     </div>
                     <!-- 2 -->
-                     <div class="col-md-3">
+                     <div class="chifres-carte">
                         <h4>2000+</h4>
                         <p>Freelances</p>
                     </div>
                     <!-- 3 -->
-                     <div class="col-md-3">
+                     <div class="chifres-carte">
                         <h4>1200+</h4>
                         <p>Missions réalisées</p>
                     </div>
                     <!-- 4 -->
-                    <div class="col-md-3">
+                    <div class="chifres-carte">
                         <h4>40+</h4>
                         <p>Pays</p>
                     </div>

@@ -1,0 +1,144 @@
+/* Page1 */
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Les variable CSS */
+:root{
+    /* Couleur */
+    --couleur_titre: #1baed7;
+    --couleur_fond: #0a1128ea;
+    --couleur_text: #FEFCFB;
+    /* --couleur_sombre: #ffffff; */
+    /* Police */
+    --titre: 'poppins',sans-serif;
+    --corps: "Roboto", sans-serif;
+    /* Espacement */
+    --espace: 20px;
+}
+
+  /* Style de base  */
+body{
+    font-family: var(--corps);
+    background-color: var(--couleur_fond);
+    color: var(--couleur_text);
+    padding-top: 65px;
+    line-height: 1.7;
+}
+
+/* Layout général */
+/* NAVBAR  */
+.header1{
+    width: 700px;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--couleur_text);
+}
+.navbar-nav{
+    align-items: center;
+}
+
+ /* Titre  */
+h1, h2, H3, h4, h5{
+    font-family: var(--titre);
+    color: var(--couleur_titre);
+    font-weight: bold;
+}
+
+/* pied de page  */
+footer{
+    background-color: var(--couleur_fond);
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
+/* SECTION HERO */
+#hero{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fond_hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: var(--espace);
+    margin-top: var(--espace);
+    width: 100vh;
+    width: 100vw;
+    /* height: 50vw; */
+    margin-top: 0;
+}
+
+/* Page3 */
+/* Section 3 plans tarifaires */
+.carte-plan1, .carte-plan1 a{
+    border: 3px solid var(--couleur_titre);
+    border-radius: var(--espace);
+}
+.carte-plan, .carte-plan a{
+    border-radius: var(--espace);
+}
+
+
+/* Page4 */
+/* Section « Notre Histoire » */
+.h2-hist{
+    padding-top: var(--espace);
+    margin-top: var(--espace);
+}
+.container-hist{
+    display: flex;
+}
+.container-hist img{
+    width: 50%;
+    border-radius: 20px;
+}
+.text-hist {
+    padding-top: 6em;
+    line-height: 2em;
+}
+/* Section « L'équipe »  */
+.a-carte{
+    text-decoration: none;
+}
+.carte-Equipe{
+    border-radius: var(--espace);
+}
+.carte-Equipe img{
+    border-radius: var(--espace);
+}
+/* Section « Nos valeurs » */
+.carte-valeur{
+    border-radius: var(--espace);
+}
+
+/* Page5 */
+/* Section formulaire */
+.cnt-container{
+    display: flex;
+    justify-content: space-around;
+}
+.contact{
+    margin-top: 8em;
+    width: 230px;
+    line-height: 2em;
+}
+.div-form form{
+    width: 210px;
+}
+.div-form input,.sujet-form, .option-form, textarea, .btn-form{
+    width: 18em;
+    border-radius: var(--espace);
+    text-align: center;
+}
+/* Carte Google Maps */
+.carte-iframe{
+    text-align: center;
+}

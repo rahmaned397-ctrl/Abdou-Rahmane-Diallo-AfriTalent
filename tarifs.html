@@ -13,16 +13,17 @@ rel="stylesheet">
 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body> 
 
     <!-- Le contenu de la page sera ajoute ici -->
     <!-- Navigation Bootstrap commune a toutes les pages --> 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
             <div class="container"> 
-                <img src="images/logo2.png" alt="Logo AfriTalent" width="25">
-                <a class="navbar-brand" href="index.html">AfriTalent</a> 
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Logo AfriTalent" width="45">
+                    AfriTalent</a> 
                 <button class="navbar-toggler" type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target="#navMenu" 
@@ -41,14 +42,12 @@ rel="stylesheet">
                 href="tarifs.html">Tarifs</a></li> 
                         <li class="nav-item"><a class="nav-link" href="about.html">A 
                 propos</a></li> 
-                         <li class="nav-item">
-                            <a class="nav-link" href="Blog.html">Blog</a>
-                        </li>
                         <li class="nav-item"><a class="nav-link" 
                 href="contact.html">Contact</a></li> 
                     </ul> 
                 </div> 
             </div> 
+            <a href="#" class="btn btn-info p-0">Rejoindre AfriTalent</a>
         </nav>
     </header> 
     <!-- Contenu principal --> 
@@ -60,7 +59,7 @@ rel="stylesheet">
                 <div class="row">
                         <!-- --1-- -->
                     <div class="col-md-4 p-2">
-                        <div class="card text-center">
+                        <div class="carte-plan card text-center">
                             <h3>Gratuit</h3>
                             <p>0FCFA/mois</p>
                             <p><i class="bi bi-check"></i>Accès limité aux Freelances</p>
@@ -72,7 +71,7 @@ rel="stylesheet">
                     </div>
                        <!-- -- --2-- -->
                     <div class="col-md-4 p-2">
-                        <div class="card text-center border-primary">
+                        <div class="carte-plan1 card text-center">
                             <h3>Pro</h3>
                             <p>120000FCFA/mois</p>
                             <p><i class="bi bi-check"></i>Accès complet aux Freelances</p>
@@ -85,7 +84,7 @@ rel="stylesheet">
                     </div>
                         <!-- --3-- -->
                     <div class="col-md-4 p-2">
-                        <div class="card text-center">
+                        <div class="carte-plan card text-center">
                             <h3>Entreprise</h3>
                             <p>150000FCFA/mois</p>
                             <p><i class="bi bi-check"></i>Accès complet</p>

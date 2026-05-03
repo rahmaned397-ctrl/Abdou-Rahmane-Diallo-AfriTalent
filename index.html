@@ -13,16 +13,18 @@ rel="stylesheet">
 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body> 
 
     <!-- Le contenu de la page sera ajoute ici --> 
     <!-- Navigation Bootstrap commune a toutes les pages --> 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <header class="header1">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
             <div class="container"> 
-                <img src="images/logo2.png" alt="Logo AfriTalent" width="25">
-                <a class="navbar-brand" href="index.html">AfriTalent</a> 
+                <!-- <img src="images/logo2.png" alt="Logo AfriTalent" width="25"> -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Logo AfriTalent" width="45">
+                    AfriTalent</a> 
                 <button class="navbar-toggler" type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target="#navMenu" 
@@ -41,16 +43,13 @@ rel="stylesheet">
                 href="tarifs.html">Tarifs</a></li> 
                         <li class="nav-item"><a class="nav-link" href="about.html">A 
                 propos</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blog.html">Blog</a>
-                        </li> 
                         <li class="nav-item"><a class="nav-link" 
                 href="contact.html">Contact</a></li> 
                     </ul> 
                 </div> 
             </div> 
-        </nav><br>
-        <a href="#" class="btn btn-info">Réjoindre AfriTalent</a>
+            <a href="#" class="btn btn-info p-0">Rejoindre AfriTalent</a>
+        </nav>
     </header> 
     <!-- Contenu principal --> 
     <main> 
@@ -77,48 +76,46 @@ rel="stylesheet">
             </div> 
         </section>
         <!-- SECTION « COMMENT ÇA MARCHE » -->
-        <section>
-            <div class="container py-5">
-                <h2>Comment ça marche ?</h2>
-                <div classe="row">
+        <section class="cont1">
+            <h2>Comment ça marche ?</h2>
+            <div class="bento-grid">
 
-                    <div class="col-md-4 p-2">
-                        <div class="card text-center">
-                            <i class="bi bi-person-plus"></i>
-                            <h3>1.Inscription</h3>
-                            <p>
-                                Créez un compte gratuitement en querlques minutes en remplissant vos informations de base.
-                                Ajoutez votre profil, vos compétences et votre expérience afin d'être visible par les clients.
-                                Cette étape est simple et rapide pour commencer à utiliser la plateforme.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 p-2">
-                        <div class="card text-center">
-                            <i class="bi bi-search"></i>
-                            <h3>2.Recherche</h3>
-                            <p>
-                                Parcourez les profils disponibles ou utilisez les filtres pour trouver le freelance idéale.
-                                Consultez les compétences, les avis et les tarifs pour faire le meilleur choix.
-                                Vous pouvez facilement comparer plusieurs profils avant de prendre une décision.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 p-2">
-                        <div class="card text-center">
-                            <i class="bi bi-people"></i>
-                            <h3>3.Collaboration</h3>
-                            <p>
-                                Travaillez en toute simplicité avce le freelance choisi grâce aux outils de communication.
-                                Suivez l'avancement du projet et échangez facicelemnt pour garantir un bon résultat.
-                                La collaboration est fluide et sécurisée jusqu'à la finalisation du projet.
-                            </p>
-                        </div>
-                    </div>
-
+                <!-- Carte1 -->
+                <div class="carte1">
+                    <div class="num-card">1</div>
+                    <i class="bi bi-person-plus text-primary"></i>
+                    <h3>Inscription</h3>
+                    <p>
+                        Créez un compte gratuitement  en quelques minutes en remplissant  vos informations de base. 
+                        Ajoutez votre profil, vos compétences  et votre expérience afin  d'être visible par les clients. 
+                        Cette étape est simple et rapide pour commencer à utiliser la plateforme.
+                    </p>
                 </div>
+            
+                <!-- Carte2 -->
+                 <div class="carte2">
+                    <div class="num-card">2</div>
+                    <i class="bi bi-search text-primary"></i>
+                    <h3>Recherche</h3>
+                    <p>
+                        Parcourez les profils disponibles ou utilisez les filtres pour trouver le freelance idéale.
+                        Consultez les compétences, les avis et les tarifs pour faire le meilleur choix.
+                        <!-- Vous pouvez facilement comparer plusieurs profils avant de prendre une décision. -->
+                    </p>
+                </div>
+            
+                <!-- Carte3 -->
+                <div class="carte3">
+                    <div class="num-card">3</div>
+                    <i class="bi bi-people text-primary"></i>
+                    <h3>Collaboration</h3>
+                    <p>
+                        Travaillez en toute simplicité  avce le freelance choisi grâce aux outils de communication.
+                        Suivez l'avancement du projet et échangez facicelemnt pour garantir un bon résultat. <br>
+                        La collaboration est fluide  et sécurisée jusqu'à la finalisation du projet.
+                    </p>
+                </div>
+
             </div>
         </section>
         <!-- Section Services --> 
@@ -128,7 +125,7 @@ rel="stylesheet">
                 <div class="row">
 
                     <div class="col-md-4 p-2"> 
-                        <div class="card">
+                        <div class="card service-carte">
                             <i class="bi bi-laptop fs-1 text-primary"></i>
                             <h3>Developpement Web</h3> 
                             <p>+500 freelances disponibles.</p>
@@ -136,7 +133,7 @@ rel="stylesheet">
                     </div> 
 
                     <div class="col-md-4 p-2">
-                        <div class="card">
+                        <div class="card service-carte">
                             <i class="bi bi-palette fs-1 text-primary"></i>
                             <h3>Design UI/UX</h3> 
                             <p>+300 freelances disponibles.</p> 
@@ -144,7 +141,7 @@ rel="stylesheet">
                     </div> 
                     
                     <div class="col-md-4 p-2"> 
-                        <div class="card">
+                        <div class="card service-carte">
                             <i class="bi bi-megaphone fs-1 text-primary"></i>
                             <h3>Marketing Digital</h3> 
                             <p>+400 freelances disponibles.</p>
@@ -152,7 +149,7 @@ rel="stylesheet">
                     </div> 
                     
                     <div class="col-md-4 p-2"> 
-                        <div class="card">
+                        <div class="card service-carte">
                             <i class="bi bi-robot fs-1 text-primary"></i>
                             <h3>Data & IA</h3> 
                             <p>+250 freelances disponibles.</p>
@@ -160,7 +157,7 @@ rel="stylesheet">
                     </div>
 
                     <div class="col-md-4 p-2"> 
-                        <div class="card">
+                        <div class="card service-carte">
                             <i class="bi bi-pen-fill fs-1 text-primary"></i>
                             <h3>Rédaction Tech</h3> 
                             <p>+200 freelances disponibles.</p>
@@ -168,7 +165,7 @@ rel="stylesheet">
                     </div>
 
                     <div class="col-md-4 p-2"> 
-                        <div class="card">
+                        <div class="card service-carte">
                             <i class="bi bi-cloud fs-1 text-primary"></i>
                             <h3>DevOp & Cloud</h3> 
                             <p>+150 freelances disponibles.</p>
