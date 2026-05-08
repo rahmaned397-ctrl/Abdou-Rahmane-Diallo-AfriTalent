@@ -101,7 +101,6 @@ ul li a{
     font-size: 18px;
 }
 
-
 /* SECTION « COMMENT ÇA MARCHE » */
 .cont1{
     text-align: center;
@@ -115,6 +114,11 @@ ul li a{
     /* justify-items: center; */
     width: 100%;
     /* height: 100%; */
+}
+.cont1 .bento-grid{
+    width: 95%;
+    /* text-align: center; */
+    padding-left: 2em;
 }
 .carte1, .carte2, .carte3{
     background: var(--couleur_text);
@@ -149,6 +153,7 @@ ul li a{
     color: var(--couleur_text);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
 }
+
 /* Section Services */
 .service-carte{
     transition: all 0.6s ease;
@@ -156,7 +161,7 @@ ul li a{
     border-radius: var(--espace);
 }
 .service-carte:hover{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     background-color: var(--couleur_fond);
     color: var(--couleur_text);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -178,18 +183,7 @@ ul li a{
     /* border-radius: 15%; */
     object-fit: cover;
  }
-/* Section Services */
-.service-carte{
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border-radius: var(--espace);
-}
-.service-carte:hover{
-    transform: translateY(-8px);
-    background-color: var(--couleur_fond);
-    color: var(--couleur_text);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Page3 */
 /* Section 3 plans tarifaires */
@@ -200,7 +194,6 @@ ul li a{
 .carte-plan, .carte-plan a{
     border-radius: var(--espace);
 }
-
 
 /* Page4 */
 /* Section « Notre Histoire » */
@@ -285,4 +278,109 @@ ul li a{
 /* Carte Google Maps */
 .carte-iframe{
     text-align: center;
+}
+
+/* Les media queries  */
+   /* Mobille  */
+@media screen and (max-width: 375px) {
+    /* Toutes les pages  */
+    .bento-grid, .Services-row,.row-equipe{
+        grid-template-columns: 1fr;
+        gap: var(--espace);
+    }
+    /* page1  */
+    #hero{
+        width: 100%;
+    }
+    #hero h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #hero p {
+        font-size: 13px;
+    }
+    .btn-hero2{
+        margin-top: 0.5em;
+    }
+     /* SECTION « COMMENT ÇA MARCHE » */
+      .cont1 .bento-grid{
+        width: 90%;
+        font-size: 12px;
+    }
+    .bento-grid .carte1, 
+    .bento-grid .carte2{
+        width: 90%;
+    }
+    .carte1, .carte2, .carte3{
+        grid-row: auto;
+        grid-column: auto;
+    }
+    
+  /* pied de page  */
+    .dv1, .dv2, .dv3, .dv4{
+        align-items: center;
+
+    }
+     
+
+     /* page4  */
+    .container-hist{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-hist{
+        padding-top: 2.3em;
+        font-size: 14px;
+    }
+    .container-hist img{
+    width: 90%;
+    border-radius: 20px;
+    }
+     /* page5  */
+    .cnt-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .div-form input,.sujet-form, .option-form, textarea, .btn-form{
+        width: 100%;
+    }
+    body iframe{
+        width: 100%;
+    }
+}
+
+/* Tablette  */
+@media screen and (max-width: 768px) {
+    /* Toutes les pages  */
+    .Services-row{
+        grid-template-columns: 1fr;
+        gap: var(--espace);
+    }
+    /* page1  */
+    
+     /* SECTION « COMMENT ÇA MARCHE » */
+      .cont1 .bento-grid{
+        width: 100%;
+    }
+    .bento-grid .carte1, 
+    .bento-grid .carte2,
+    .bento-grid .carte3{
+        width: 85%; 
+        text-align: center;
+    }
+
+    /* page2  */
+    .cnt-profil .row-profil{
+        /* width: 100%; */
+        /* align-items: center; */
+        margin: 0 0;
+        gap: var(--espace);
+    }
+
+      /* Page3  */
+    .row-tarif{
+        gap: var(--espace);
+    }
+
 }
