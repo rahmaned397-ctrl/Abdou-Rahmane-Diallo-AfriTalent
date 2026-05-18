@@ -20,7 +20,7 @@ rel="stylesheet">
     <!-- Le contenu de la page sera ajoute ici --> 
     <!-- Navigation Bootstrap commune a toutes les pages --> 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
             <div class="container"> 
                 <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Logo AfriTalent" width="45">
                     AfriTalent</a> 
@@ -47,7 +47,12 @@ rel="stylesheet">
                     </ul> 
                 </div> 
             </div> 
-            <a href="#" class="btn btn-info p-0">Rejoindre AfriTalent</a> 
+            <a href="#" class="btn btn-info p-0">Rejoindre AfriTalent</a>
+            
+            <!-- Le toggle Dark/Light Mode fonctionnel depuis la navbar -->
+            <button id="btn_toggle" class="btn btn-light">
+                <i class="bi bi-moon-fill ms-2"></i>
+            </button>
         </nav>
     </header> 
     <!-- Contenu principal --> 
@@ -186,6 +191,10 @@ rel="stylesheet">
                 </div>
             </div>
         </section> 
+         <!-- Le bouton « Retour en haut » qui apparaît au scroll -->
+        <button id="btn-retour">
+           <i class="bi bi-arrow-up-square"></i>
+        </button >
     </main>
     <!-- Pied de page --> 
     <footer> 

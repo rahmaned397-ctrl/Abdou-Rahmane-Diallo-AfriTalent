@@ -332,6 +332,9 @@ ul li a{
         padding-top: 2.3em;
         font-size: 14px;
     }
+    .container-hist .text-hist{
+        width: 90%;
+    }
     .container-hist img{
     width: 90%;
     border-radius: 20px;
@@ -346,7 +349,7 @@ ul li a{
         width: 100%;
     }
     body iframe{
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -383,4 +386,24 @@ ul li a{
         gap: var(--espace);
     }
 
+}
+
+/* Le toggle Dark/Light Mode fonctionnel depuis la navbar */
+#btn_toggle{
+    margin: 0 1em;
+}
+
+/* La navbar qui change de style au scroll (fond, ombre, effet shrink) */
+.nav-scroll{
+    background-color: var(--couleur_fond) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: var(--couleur_text);
+}
+/* <!-- Le bouton « Retour en haut » qui apparaît au scroll --> */
+#btn-retour i{
+    position: fixed;
+    bottom: var(--espace);
+    right: var(--espace);    
+    color: var(--couleur_titre);
+    font-size: 2.3em;
 }
